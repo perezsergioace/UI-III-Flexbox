@@ -180,32 +180,32 @@ h5 {
 }
 
 /* <---------navigation----------------------> */
-.navigation {
-  display: flex;
-  justify-content: space-evenly;
-  width: 750px;
-  align-items: center;
-  margin-top: 20px;
-}
+    .navigation {
+      display: flex;
+      justify-content: space-evenly;
+      width: 750px;
+      align-items: center;
+      margin-top: 20px;
+    }
 
-.navigation nav {
-  /* margin-top: 40px; */
-}
+    .navigation nav {
+      /* margin-top: 40px; */
+    }
 
-.navigation a {
-  margin: 20px;
-  text-decoration: none;
-  color: gray;
-}
+    .navigation a {
+      margin: 20px;
+      text-decoration: none;
+      color: gray;
+    }
 
-.navigation .logo {
-  margin-left: 2px;
-}
+    .navigation .logo {
+      margin-left: 2px;
+    }
 
-.logo {
-  position: relative;
-  left: 130px;
-}
+    .logo {
+      position: relative;
+      left: 130px;
+    }
 
 /* <------------header-----------------------------> */
 
