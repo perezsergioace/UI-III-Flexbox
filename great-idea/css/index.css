@@ -176,11 +176,20 @@ h5 {
 .container {
   width: 879px;
   margin: auto;
+  border: 1px solid red;
+}
+
+/* <---------navigation----------------------> */
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  width: 750px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .navigation nav {
-  display: inline-block;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .navigation a {
@@ -193,7 +202,14 @@ h5 {
   margin-left: 2px;
 }
 
-.header-content {
+.logo {
+  position: relative;
+  left: 130px;
+}
+
+/* <------------header-----------------------------> */
+
+/* .header-content {
   padding: 40px 0px;
 }
 
@@ -220,30 +236,70 @@ h5 {
   margin: 0 auto;
 }
 
+.circle-img {
+  margin-left: 65px;
+} */
+
+/* <------------header-----------------------------> */
+
+.header-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.tag-line {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content h1 {
+  font-size: 60px;
+}
+
+.header-content .tag-line .get-started-button {
+  border: 1px solid black;
+  text-align: center;
+  padding: 7px 12px;
+  width: 130px;
+  margin: 0 auto;
+}
+
+/* <---------top-content---------------------------------->*/
+
 .top-content {
-  font-size: 13pt;
-  border-top: solid gray 1px;
-  padding: 20px 0;
-  line-height: 2;
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
 }
 
-.top-content p {
-  display: inline-block;
-  line-height: 1;
-  padding: 1px 0;
-  width: 100%;
+.top-content div {
+  width: 55%;
 }
 
-.bottom-content div {
-  display: inline-block;
-  width: 289px;
-}
+/* <---------top-content---------------------------------->*/
 
 .middle-img {
   padding: 5px 0;
   margin-bottom: 20px;
 }
+
+/* <---------bottom-content---------------------------------->*/
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content div {
+  width: 32%;
+}
+
+/* <---------bottom-content---------------------------------->*/
 
 .footer-content {
   border-top: solid gray 1px;
@@ -253,18 +309,4 @@ h5 {
 }
 .footer-content address {
   line-height: 1;
-}
-
-.footer-content .copyright {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.logo {
-  position: relative;
-  left: 130px;
-}
-
-.circle-img {
-  margin-left: 65px;
 }
