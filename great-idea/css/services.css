@@ -3,161 +3,76 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-    .navigation {
+.navigation {
       display: flex;
       justify-content: space-evenly;
       width: 750px;
       align-items: center;
       margin-top: 20px;
     }
+
 
     .navigation a {
       margin: 20px;
@@ -173,3 +88,76 @@ h5 {
       position: relative;
       left: 130px;
     }
+
+.services-container {
+  width: 879px;
+  margin: auto;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content-sections {
+    width: 45%;
+    border: 1px solid black;
+    margin: 30px 0;
+    background-color: rgb(238, 238, 238);
+}
+
+.main-content-sections button {
+    border: 1px solid black;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.main-content-sections .text-style {
+    padding: 30px;
+}
+
+button {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.bottom-line {
+    height: 3px;
+    background-color: black;
+}
+
+.facts-and-img {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .facts-text {
+    border: 1px solid red;
+} */
+
+.copyright {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.services-header-img {
+    width: 100%;
+    padding: 20px 0;
+    line-height: 150%;
+}
+
+.services {
+    padding: 20px 0;
+    line-height: 150%;
+}
+
+.text-style p {
+   line-height: 140%; 
+}
+
+.top-line {
+    height: 2px;
+    background-color: black;
+}
