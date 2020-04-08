@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 
     .navigation a {
-      margin: 20px;
+      margin: 15px;
       text-decoration: none;
       color: gray;
     }
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5 {
 
     .logo {
       position: relative;
-      left: 130px;
+      left: 155px;
     }
 
 .services-container {
